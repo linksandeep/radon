@@ -18,3 +18,4 @@ const changeToUpperCase= function(){
 module.exports.Trim = Trim
 module.exports.changetoLowerCase = changetoLowerCase
 module.exports.changeToUpperCase = changeToUpperCase
+// m
