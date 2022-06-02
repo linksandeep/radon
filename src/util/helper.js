@@ -1,11 +1,15 @@
-const printDate = function(req ,res) {
-    res.send(new Date.now().getDate())
-}
-const printmonth = function(req ,res) {
-    res.send(new Month.now().getMonth())
-}
+const printDate = function() {
+    let currentDate =new Date()
+    console.log(currentDate)}
+
+const printmonth = function() {
+    let currentDate=new Date()
+    let currentMonth=currentDate.getMonth()
+    console.log(currentMonth)}
+
 const getBatchInfo = function(req ,res) {
-    res.send("betch name Radon week2,day15  topic was ocovered about today that how to refres the branch and how to create new branches and push and many new things ")
+    let betch=("betch name Radon week2,day15  topic was ocovered about today that how to refres the branch and how to create new branches and push and many new things ")
+    console.log(betch)
 }
 
 

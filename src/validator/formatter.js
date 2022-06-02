@@ -1,21 +1,21 @@
-const Trim= function(){
+const trim= function(){
+    const greeting = '   Hello world!   ';
 
-    console.log("this is the way" +a)
-    const b = a.trim();
-    console.log(b)
+    console.log(greeting);
+    console.log(greeting.trim());
 
 }
 const changetoLowerCase= function(){
-    const d = c.toLowerCase();
-    console.log("the lower care funcation"+d)
+    const sentence = 'The quick brown fox jumps over the lazy dog.';
+    console.log(sentence.toLowerCase());
 
 }
 const changeToUpperCase= function(){
-    const f = e.toUpperCase();
-    console.log("this is the upper care"+f)
+    const sentence = 'The quick brown fox jumps over the lazy dog.';
+    console.log(sentence.toUpperCase());
 
 }
-module.exports.Trim = Trim
+module.exports.trim = trim
 module.exports.changetoLowerCase = changetoLowerCase
 module.exports.changeToUpperCase = changeToUpperCase
 // m

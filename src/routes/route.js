@@ -11,7 +11,7 @@ router.get('/test-me', function (req, res) {
     newRepo.printDate()
     newRepo.printmonth()
     newRepo.getBatchInfo()
-    newRepo2.Trime()
+    newRepo2.trim()
     newRepo2.changetoLowerCase()
     newRepo2.changeToUpperCase()
     res.send('My first ever api!')

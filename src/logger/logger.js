@@ -1,5 +1,6 @@
-const log = function(req ,res) {
-    res.send("Welcome to my application. I am sandeep and a part of FunctionUp Radon cohort  kk.")
+const log = function() {
+    let welcome=("Welcome to my application. I am sandeep and a part of FunctionUp Radon cohort  kk.")
+    console.log(welcome)
 }
 
 
