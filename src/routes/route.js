@@ -12,6 +12,7 @@ router.post("/BookDetails",writerController.BookDetails)
 router.get("/Chetan_Bhagat",writerController.Chetan_Bhagat)
 router.get("/findBook",writerController.findBook)
 router.get("/querying",writerController.querying)
+//router.get("/authorOfBook",writerController.authorofBook)
  module.exports = router;
 
 

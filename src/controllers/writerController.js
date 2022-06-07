@@ -27,6 +27,19 @@ const createBookAuthor=async function (req, res) {
      res.send({msg:authorData,price})
  }
 
+
+ const authorofBook= async function (req, res) {
+    let data=await bookModel.findOneAndUpdate({name:"two states"},{$set:{prices:100}},{new:true})
+    let authorData=await AuthorModel.find({author_id:data.author_id}.select("author_name"))
+    let price= data.prices
+       
+       res.send( { msg: authorData,price})
+  }
+  
+  
+
+
+
  //5
  const findBook = async function(req,res){
      let findBook=await bookModel.find( { price : { $gte: 50}  ,  price: {$lte: 100} } )  //author name missing 
@@ -46,3 +59,4 @@ module.exports.BookDetails=BookDetails
 module.exports.Chetan_Bhagat=Chetan_Bhagat
 module.exports.findBook=findBook
 module.exports.querying=querying
+module.exports.authorofBook=authorofBook
