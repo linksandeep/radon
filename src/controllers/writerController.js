@@ -20,11 +20,10 @@ const createBookAuthor=async function (req, res) {
 
  //3
  const Chetan_Bhagat = async function(req,res){
-     let data=await AuthorModel.find({author_name:"Chaten Bhagat"}).select("author_id")
-      console.log(data)
-      let authorData=await AuthorModel.find({author_id:data.author_id}).select("author_name")
-     let price=data.prices
-     res.send({msg:authorData,price})
+      //console.log(data)
+      let authorData=await AuthorModel.find({author_id:1}).select({author_id:1})
+     let list=await bookModel.find({author_id:1})
+     res.send({msg:list})
  }
 
 
