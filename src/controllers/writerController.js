@@ -41,14 +41,14 @@ const createBookAuthor=async function (req, res) {
 
  //5
  const findBook = async function(req,res){
-     let findBook=await bookModel.find( { price : { $gte: 50}  ,  price: {$lte: 100} } )  //author name missing 
+     let findBook=await bookModel.find( { price : { $gte: 50}  ,  price: {$lte: 100} } ).select({author_name:"Chetan_Bhagat"})  //author name missing 
      res.send({msg:findBook})
  }
 
 
  //6
 const querying = async function(req,res){
- let data=await bookModel.find( { price : { $gte: 50, $lte: 100} } ).select({ author_id :1})
+ let data= (await bookModel.find( { price : { $gte: 50, $lte: 100} } ).select({ author_id :1})).map(x=>x.author_name)
  res.send({msg:data})
  }
 
