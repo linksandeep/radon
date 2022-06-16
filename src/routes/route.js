@@ -10,7 +10,7 @@ router.post("/users", userController.createUser  )
 
 router.post("/login", userController.loginUser)
 
-// //The userId is sent by front end
+////The userId is sent by front end
 router.get("/users/:userId",authentication.authentication,authentication.auth,userController.getUserData)
 
 router.put("/users/:userId",authentication.authentication,authentication.auth,userController.updateUser)
